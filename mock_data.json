@@ -1,0 +1,56 @@
+{
+    "catProfile": {
+        "id": "MeOW-1",
+        "name": "Coco",
+        "breed": "Angora",
+        "age": 3,
+        "photoUrl": "https://placecats.com/200/200",
+        "connectionStatus": "connected"
+    },
+    "location": {
+        "current": {
+            "latitude": -6.2088,
+            "longitude": 106.8459,
+            "timestamp": "2026-06-25T08:00:00.000Z"
+        },
+        "safeZone": {
+            "center": {
+                "latitude": -6.2088,
+                "longitude": 106.8456
+            },
+            "radius": 200
+        }
+    },
+    "health": {
+        "current": {
+            "heartRate": 140,
+            "bodyTemperature": 38.5,
+            "activityLevel": 45,
+            "timestamp": "2026-06-25T08:00:00.000Z"
+        },
+        "history": [
+            { "heartRate": 130, "bodyTemperature": 38.3, "activityLevel": 30, "timestamp": "2026-06-25T07:50:00.000Z" },
+            { "heartRate": 135, "bodyTemperature": 38.4, "activityLevel": 35, "timestamp": "2026-06-25T07:51:00.000Z" },
+            { "heartRate": 142, "bodyTemperature": 38.5, "activityLevel": 50, "timestamp": "2026-06-25T07:52:00.000Z" },
+            { "heartRate": 155, "bodyTemperature": 38.7, "activityLevel": 70, "timestamp": "2026-06-25T07:53:00.000Z" },
+            { "heartRate": 160, "bodyTemperature": 38.8, "activityLevel": 75, "timestamp": "2026-06-25T07:54:00.000Z" },
+            { "heartRate": 148, "bodyTemperature": 38.6, "activityLevel": 60, "timestamp": "2026-06-25T07:55:00.000Z" },
+            { "heartRate": 138, "bodyTemperature": 38.4, "activityLevel": 40, "timestamp": "2026-06-25T07:56:00.000Z" },
+            { "heartRate": 132, "bodyTemperature": 38.3, "activityLevel": 25, "timestamp": "2026-06-25T07:57:00.000Z" },
+            { "heartRate": 136, "bodyTemperature": 38.4, "activityLevel": 38, "timestamp": "2026-06-25T07:58:00.000Z" },
+            { "heartRate": 140, "bodyTemperature": 38.5, "activityLevel": 45, "timestamp": "2026-06-25T07:59:00.000Z" }
+        ]
+    },
+    "locationHistory": [
+        { "latitude": -6.2080, "longitude": 106.8448, "timestamp": "2026-06-25T07:50:00.000Z" },
+        { "latitude": -6.2081, "longitude": 106.8449, "timestamp": "2026-06-25T07:51:00.000Z" },
+        { "latitude": -6.2083, "longitude": 106.8451, "timestamp": "2026-06-25T07:52:00.000Z" },
+        { "latitude": -6.2085, "longitude": 106.8453, "timestamp": "2026-06-25T07:53:00.000Z" },
+        { "latitude": -6.2087, "longitude": 106.8454, "timestamp": "2026-06-25T07:54:00.000Z" },
+        { "latitude": -6.2089, "longitude": 106.8455, "timestamp": "2026-06-25T07:55:00.000Z" },
+        { "latitude": -6.2090, "longitude": 106.8456, "timestamp": "2026-06-25T07:56:00.000Z" },
+        { "latitude": -6.2089, "longitude": 106.8457, "timestamp": "2026-06-25T07:57:00.000Z" },
+        { "latitude": -6.2088, "longitude": 106.8457, "timestamp": "2026-06-25T07:58:00.000Z" },
+        { "latitude": -6.2088, "longitude": 106.8456, "timestamp": "2026-06-25T07:59:00.000Z" }
+    ]
+}
