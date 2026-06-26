@@ -56,7 +56,6 @@ export type BehaviorCategory =
 export interface BehaviorResult {
     category: BehaviorCategory;
     label: string;
-    emoji: string;
 }
 
 // for the mock data
