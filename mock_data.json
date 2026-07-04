@@ -2,9 +2,9 @@
     "catProfile": {
         "id": "MeOW-1",
         "name": "Coco",
-        "breed": "Angora",
+        "breed": "Turkish Angora",
         "age": 3,
-        "photoUrl": "https://placecats.com/200/200",
+        "photoUrl": "/public/images/coco.jpg",
         "connectionStatus": "connected"
     },
     "location": {

@@ -1,37 +1,24 @@
 # dependencies
 node_modules/
-/.pnp
-.pnp.js
 
-# testing
-/coverage
+# build output
+dist/
 
-# next.js
-/.next/
-/out/
+# env files — contains API keys, DO NOT push
+.env
+.env.local
+.env.*.local
 
-# production
-/build
+# editor
+.vscode/
+*.swp
+*.swo
 
-# misc
+# OS
 .DS_Store
-*.pem
+Thumbs.db
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# local env files 
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
