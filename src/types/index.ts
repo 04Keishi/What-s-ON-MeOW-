@@ -58,6 +58,62 @@ export interface BehaviorResult {
     label: string;
 }
 
+// Geofence monitoring
+
+export type GeofenceEventType = "exit" | "enter";
+
+export interface GeofenceEvent {
+    id: string;
+    type: GeofenceEventType;
+    distance: number; // meters from safe-zone center at the moment of the event
+    timestamp: string;
+}
+
+export interface GeofenceStatus {
+    distance: number; // meters from safe-zone center
+    isOutside: boolean;
+    marginPct: number; // 0 at center, 100 exactly on the boundary, >100 outside
+}
+
+// Health insights & early-warning
+
+export type AlertSeverity = "info" | "warning" | "critical";
+
+export interface HealthAlert {
+    id: string;
+    severity: AlertSeverity;
+    metric: MetricType | "behavior";
+    title: string;
+    message: string;
+    recommendation: string;
+    value: number;
+    timestamp: string;
+}
+
+export interface WellnessScore {
+    score: number; // 0-100
+    grade: "excellent" | "good" | "fair" | "poor";
+    breakdown: {
+        heart: number; // 0-100
+        temperature: number; // 0-100
+        activity: number; // 0-100
+    };
+}
+
+// Smart diary
+
+export interface DiaryMood {
+    emoji: string;
+    label: string;
+}
+
+export interface CatDiary {
+    narrative: string;
+    mood: DiaryMood;
+    highlights: string[];
+    healthNote: string;
+}
+
 // for the mock data
 
 export interface MockData {
