@@ -4,6 +4,13 @@ node_modules/
 # build output
 dist/
 
+# TypeScript incremental build artifacts (emitted by `tsc -b`)
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+vitest.config.js
+vitest.config.d.ts
+
 # env files — contains API keys, DO NOT push
 .env
 .env.local

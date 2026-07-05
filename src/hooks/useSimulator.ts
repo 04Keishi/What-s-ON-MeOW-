@@ -5,7 +5,6 @@ import {
     generateNextHealthMetric,
     trimHistory,
 } from "@/data/helpers";
-import { Mock } from "node:test";
 
 interface UseSimulatorReturn {
     currentPosition: GeoPosition;
