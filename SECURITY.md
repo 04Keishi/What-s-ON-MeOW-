@@ -117,15 +117,13 @@ a set), then re-run the test suite.
 
 ## 4. Aikido security scan (bonus)
 
-The repository was scanned with [Aikido Security](https://www.aikido.dev/)
-(SAST + dependency/SCA + secret scanning) via its GitHub integration on the
-`main` branch.
+The repository was scanned with [Aikido Security](https://www.aikido.dev/) via
+its GitHub integration on the `main` branch, covering Dependencies (SCA),
+exposed secrets, SAST, Infrastructure-as-Code, License, and Malware.
 
-**Result: 0 critical, 0 high, 0 low, and 1 medium finding.** The single medium
-finding — _"GitHub organization should enforce an IP allow list"_ — is an
-account/SCM **posture** recommendation, not a defect in the application code.
-There were **no code vulnerabilities, no exploitable dependency issues, and no
-secrets** detected in the repository.
+**Result: ✅ 0 issues found** — no critical, high, medium, or low findings
+across any scan category. No code vulnerabilities, no exploitable dependency
+issues, no exposed secrets, no license conflicts, and no malware.
 
 This is consistent with the manual review above. Full details and the result
 screenshot are in **[docs/aikido-scan-report.md](./docs/aikido-scan-report.md)**.
