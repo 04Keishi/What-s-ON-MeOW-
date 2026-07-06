@@ -141,7 +141,11 @@ npm run build
 npm run preview
 ```
 
-The app opens on the Login page (`/`); the dashboard lives at `/dashboard`.
+The app opens on the Login page (`/`); the dashboard lives at `/dashboard`
+(protected by a demo auth guard).
+
+**Demo login:** username `admin`, password `meow123`. This is a client-side
+demo auth only — see [SECURITY.md](./SECURITY.md) for details.
 
 ---
 
@@ -176,6 +180,9 @@ Highlights:
 - No secrets, credentials, or API keys in the codebase.
 - Persisted `localStorage` data is validated as untrusted on read.
 - No user data leaves the browser; there are no third-party network calls.
+- An [Aikido security scan](./docs/aikido-scan-report.md) reports **0 code and
+  dependency vulnerabilities** (the only finding is an unrelated GitHub-org
+  posture recommendation).
 
 ---
 

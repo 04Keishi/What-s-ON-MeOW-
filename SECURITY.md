@@ -33,6 +33,25 @@ data is effectively zero in this build.
 
 ---
 
+## 1a. Authentication (demo, client-side)
+
+The login screen is protected by a **client-side demo authentication** layer:
+an `AuthProvider` validates credentials, persists a session flag, guards the
+`/dashboard` route (`RequireAuth`), and provides logout.
+
+**This is intentionally not real security.** The credential check runs in the
+browser and the session lives in `localStorage`, so a determined user can
+bypass it. It is acceptable here because:
+
+- The app only ever displays **simulated, non-sensitive data** (no real pet,
+  owner, or account information).
+- There is no backend, no personal data, and nothing of value to protect.
+
+The demo credentials are public by design (shown on the login screen) so judges
+can sign in. For a production deployment this layer would be replaced with a
+real identity provider (e.g. Supabase/Firebase Auth) backed by a server; the
+current structure (context, route guard, logout) maps cleanly onto that.
+
 ## 2. Secure coding practices
 
 - **No secrets in the repo.** No API keys, tokens, passwords, or credentials
@@ -98,19 +117,18 @@ a set), then re-run the test suite.
 
 ## 4. Aikido security scan (bonus)
 
-An [Aikido](https://www.aikido.dev/) scan is recommended for an independent,
-automated review. To run and attach a report:
+The repository was scanned with [Aikido Security](https://www.aikido.dev/)
+(SAST + dependency/SCA + secret scanning) via its GitHub integration on the
+`main` branch.
 
-```bash
-# via the Aikido GitHub/CLI integration, point it at this repository
-# then export the report to:
-#   docs/aikido-scan-report.pdf   (or .json)
-```
+**Result: 0 critical, 0 high, 0 low, and 1 medium finding.** The single medium
+finding — _"GitHub organization should enforce an IP allow list"_ — is an
+account/SCM **posture** recommendation, not a defect in the application code.
+There were **no code vulnerabilities, no exploitable dependency issues, and no
+secrets** detected in the repository.
 
-Once generated, drop the report file in this repo and link it here. Given the
-findings above, we expect the scan to confirm: no secrets, no production runtime
-vulnerabilities, and only the dev-tooling advisories already documented in
-section 3.
+This is consistent with the manual review above. Full details and the result
+screenshot are in **[docs/aikido-scan-report.md](./docs/aikido-scan-report.md)**.
 
 ---
 
