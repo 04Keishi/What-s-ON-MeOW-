@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  /* Smooth entrance used when switching dashboard tabs */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.35s ease-out both;
+  }
+}
+
+@layer components {
+  /* Subtle lift on dashboard cards (elements using the 24px card radius) */
+  main [class*="rounded-[24px]"] {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  main [class*="rounded-[24px]"]:hover {
+    box-shadow: 0 10px 30px -12px rgba(10, 9, 3, 0.18);
+    transform: translateY(-2px);
+  }
+}

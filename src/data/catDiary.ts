@@ -87,8 +87,8 @@ export function generateCatDiary(
     const wellness = computeWellnessScore(history);
     const healthNote =
         alerts.length === 0
-            ? `Wellness score ${wellness.score}/100 (${wellness.grade}) — no concerns detected. 💚`
-            : `Wellness score ${wellness.score}/100 — ${alerts[0].title.toLowerCase()}. ${alerts[0].recommendation}`;
+            ? `Wellness score ${wellness.score}/100 (${wellness.grade})  no concerns detected. 💚`
+            : `Wellness score ${wellness.score}/100  ${alerts[0].title.toLowerCase()}. ${alerts[0].recommendation}`;
 
     return { narrative, mood, highlights, healthNote };
 }
