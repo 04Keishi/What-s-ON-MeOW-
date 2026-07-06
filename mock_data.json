@@ -2,23 +2,23 @@
     "catProfile": {
         "id": "MeOW-1",
         "name": "Coco",
-        "breed": "Turkish Angora",
+        "breed": "Angora",
         "age": 3,
         "photoUrl": "/public/images/coco.jpg",
         "connectionStatus": "connected"
     },
     "location": {
         "current": {
-            "latitude": -6.2088,
-            "longitude": 106.8459,
+            "latitude": -6.1327579,
+            "longitude": 106.7837462,
             "timestamp": "2026-06-25T08:00:00.000Z"
         },
         "safeZone": {
             "center": {
-                "latitude": -6.2088,
-                "longitude": 106.8456
+                "latitude": -6.1327579,
+                "longitude": 106.7837462
             },
-            "radius": 500
+            "radius": 200
         }
     },
     "health": {
@@ -42,15 +42,15 @@
         ]
     },
     "locationHistory": [
-        { "latitude": -6.2080, "longitude": 106.8448, "timestamp": "2026-06-25T07:50:00.000Z" },
-        { "latitude": -6.2081, "longitude": 106.8449, "timestamp": "2026-06-25T07:51:00.000Z" },
-        { "latitude": -6.2083, "longitude": 106.8451, "timestamp": "2026-06-25T07:52:00.000Z" },
-        { "latitude": -6.2085, "longitude": 106.8453, "timestamp": "2026-06-25T07:53:00.000Z" },
-        { "latitude": -6.2087, "longitude": 106.8454, "timestamp": "2026-06-25T07:54:00.000Z" },
-        { "latitude": -6.2089, "longitude": 106.8455, "timestamp": "2026-06-25T07:55:00.000Z" },
-        { "latitude": -6.2090, "longitude": 106.8456, "timestamp": "2026-06-25T07:56:00.000Z" },
-        { "latitude": -6.2089, "longitude": 106.8457, "timestamp": "2026-06-25T07:57:00.000Z" },
-        { "latitude": -6.2088, "longitude": 106.8457, "timestamp": "2026-06-25T07:58:00.000Z" },
-        { "latitude": -6.2088, "longitude": 106.8456, "timestamp": "2026-06-25T07:59:00.000Z" }
+        { "latitude": -6.1331579, "longitude": 106.7833462, "timestamp": "2026-06-25T07:50:00.000Z" },
+        { "latitude": -6.1330579, "longitude": 106.7834462, "timestamp": "2026-06-25T07:51:00.000Z" },
+        { "latitude": -6.1329579, "longitude": 106.7835462, "timestamp": "2026-06-25T07:52:00.000Z" },
+        { "latitude": -6.1328579, "longitude": 106.7836462, "timestamp": "2026-06-25T07:53:00.000Z" },
+        { "latitude": -6.1327079, "longitude": 106.7837962, "timestamp": "2026-06-25T07:54:00.000Z" },
+        { "latitude": -6.1326579, "longitude": 106.7838462, "timestamp": "2026-06-25T07:55:00.000Z" },
+        { "latitude": -6.1326079, "longitude": 106.7839462, "timestamp": "2026-06-25T07:56:00.000Z" },
+        { "latitude": -6.1326579, "longitude": 106.7838962, "timestamp": "2026-06-25T07:57:00.000Z" },
+        { "latitude": -6.1327079, "longitude": 106.7838062, "timestamp": "2026-06-25T07:58:00.000Z" },
+        { "latitude": -6.1327579, "longitude": 106.7837462, "timestamp": "2026-06-25T07:59:00.000Z" }
     ]
 }
