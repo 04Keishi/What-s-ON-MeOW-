@@ -29,6 +29,3 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# kiro specs — local only
-.kiro/
